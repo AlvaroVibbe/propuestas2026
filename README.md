@@ -18,6 +18,8 @@ Si tu instalación de Node no incluye npm, los equivalentes son `node scripts/bu
 
 Importa el repositorio en Vercel. La configuración de `vercel.json` usa `npm run build` y publica `dist/`; no requiere variables de entorno, base de datos ni servicios exclusivos de Vercel. También se puede ejecutar el mismo comando en el flujo de integración continua antes del despliegue.
 
+En los ajustes del proyecto Vercel, **Root Directory** debe apuntar a la carpeta que contiene juntos `package.json`, `vercel.json` y `scripts/build.mjs`. Si subes los archivos de este proyecto directamente a la raíz del repositorio, deja Root Directory como `./`. Si quedan dentro de una carpeta `chequeabolivia-especial/`, selecciona esa carpeta como raíz del proyecto.
+
 ## Subir el proyecto a GitHub
 
 Sube el contenido de esta carpeta a un repositorio nuevo. Desde una terminal abierta aquí, puedes crear el primer commit y enlazar el remoto que te entregue GitHub:
