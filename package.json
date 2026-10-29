@@ -1,0 +1,11 @@
+{
+  "name": "chequeabolivia-promesas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs dist",
+    "start": "node scripts/serve.mjs dist"
+  }
+}
